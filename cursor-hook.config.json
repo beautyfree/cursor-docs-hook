@@ -1,0 +1,23 @@
+{
+  "installCommand": "cd hooks/docs && npm i --no-save --silent && npm run build || true",
+  "files": {
+    "hooks": [
+      "hooks/docs"
+    ],
+    "rules": [
+      "rules/DOCS.mdc"
+    ]
+  },
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "node $HOME/.cursor/hooks/docs/dist/docs.js"
+      }
+    ],
+    "stop": [
+      {
+        "command": "node $HOME/.cursor/hooks/docs/dist/docs.js"
+      }
+    ]
+  }
+}

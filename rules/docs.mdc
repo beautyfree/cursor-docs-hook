@@ -1,0 +1,14 @@
+---
+description: Use docs/DOCS.md as the project documentation entry point and follow the DOCS.md convention
+alwaysApply: true
+---
+
+# Project documentation (DOCS.md)
+
+Use **docs/DOCS.md** as the main entry point for project structure and module documentation.
+
+- **Read** `docs/DOCS.md` (project root) when you need an overview of the codebase, entry points, or where things live. It describes the project, the stack, the DOCS.md convention, and links to module-level DOCS.md files.
+- **When working in a directory**, check if it has an `DOCS.md` (e.g. `src/main/DOCS.md`, `src/main/agent/DOCS.md`, `src/renderer/DOCS.md`, `scripts/DOCS.md`, or subfolders like `src/main/agent/core/DOCS.md`). Use it to understand what the module does, what’s in it, and what can be used.
+- **When adding or changing substantial code** in a functional unit or subfolder, create or update the relevant `DOCS.md` so it stays accurate (see the convention in docs/DOCS.md).
+
+This keeps project docs consistent and gives you (and other agents) a single place to start: docs/DOCS.md.

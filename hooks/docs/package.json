@@ -1,0 +1,21 @@
+{
+  "name": "cursor-docs-hook",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Cursor hook to keep project docs consistent via afterFileEdit + stop",
+  "main": "dist/docs.js",
+  "bin": {
+    "docs": "./dist/docs.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "cursor-hook": "^0.1.5",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

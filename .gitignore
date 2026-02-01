@@ -1,0 +1,43 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+out/
+
+# Env files
+.env
+.env.*
+
+# TypeScript
+*.tsbuildinfo
+
+# Cursor/Project agent files
+.cursor/
+cursor-agent/
+*.agent.log
+
+# Misc
+*.log
+*.swp
+*.tmp
+*.bak
+state
+
+DOCS.md
+!docs/DOCS.md
