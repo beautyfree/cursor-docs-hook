@@ -39,5 +39,6 @@ cursor-agent/
 *.bak
 state
 
-DOCS.md
-!docs/DOCS.md
+docs/
+INDEX.md
+!docs/INDEX.md

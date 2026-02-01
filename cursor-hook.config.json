@@ -5,7 +5,7 @@
       "hooks/docs"
     ],
     "rules": [
-      "rules/DOCS.mdc"
+      "rules/docs.mdc"
     ]
   },
   "hooks": {

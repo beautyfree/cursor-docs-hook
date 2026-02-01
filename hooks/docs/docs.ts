@@ -7,7 +7,7 @@
  * - stop: when the agent stops, if any files were edited this run, clears state
  *   and runs Cursor Agent CLI in the background to update docs.
  *
- * See docs/DOCS.md convention and README in this folder.
+ * See docs/INDEX.md convention and README in this folder.
  */
 
 import { spawn } from 'child_process'
@@ -27,7 +27,7 @@ import {
 
 /** Prompt sent to Cursor Agent CLI for the documentation pass. */
 const DOC_PROMPT =
-  'Documentation pass (stop hook): Keep project docs consistent. (1) Update docs/DOCS.md so it describes the project and links to module-level DOCS.md files. (2) In every important folder (functional unit root: e.g. src/main, src/main/agent, src/main/app, src/renderer, scripts), ensure there is an DOCS.md describing what the module does, what is in it, and what can be used. (3) In subfolders that have substantial content (e.g. src/main/agent/core, src/renderer/src), add or update their own DOCS.md. Create or update only what is missing or outdated; leave accurate content as is.'
+  'Documentation pass (stop hook): Keep project docs consistent. (1) Update docs/INDEX.md so it describes the project and links to module-level INDEX.md files. (2) In every important folder (functional unit root: e.g. src/main, src/main/agent, src/main/app, src/renderer, scripts), ensure there is an INDEX.md describing what the module does, what is in it, and what can be used. (3) In subfolders that have substantial content (e.g. src/main/agent/core, src/renderer/src), add or update their own INDEX.md. Create or update only what is missing or outdated; leave accurate content as is.'
 
 /** CLI options: --model <id>, --log (only from command, no env). */
 function parseCliArgs(): { model: string | undefined; log: boolean } {

@@ -1,6 +1,6 @@
 # Cursor Docs Hook
 
-Keeps project documentation consistent by running a Cursor Agent doc pass after edits. Records edited files per conversation and, when the agent stops, invokes the Cursor Agent CLI in the background to update `docs/DOCS.md` and module-level `DOCS.md` files if there were edits.
+Keeps project documentation consistent by running a Cursor Agent doc pass after edits. Records edited files per conversation and, when the agent stops, invokes the Cursor Agent CLI in the background to update `docs/INDEX.md` and module-level `INDEX.md` files if there were edits.
 
 ## Features
 
@@ -47,13 +47,13 @@ The hook uses Node.js and TypeScript; everything is installed and compiled durin
    - Otherwise does nothing
    - Agent output is appended to `.cursor/hooks/docs/agent.log` when `--log` is passed in the command
 
-## DOCS.md Convention
+## INDEX.md Convention
 
 The doc-pass agent is instructed to:
 
-- **docs/DOCS.md** — Project overview and links to module-level DOCS.md files
-- **Functional roots** (e.g. `src/main`, `src/main/agent`, `src/renderer`, `scripts`) — An `DOCS.md` describing the module and what can be used
-- **Subfolders with substantial content** — Their own `DOCS.md` where useful
+- **docs/INDEX.md** — Project overview and links to module-level INDEX.md files
+- **Functional roots** (e.g. `src/main`, `src/main/agent`, `src/renderer`, `scripts`) — An `INDEX.md` describing the module and what can be used
+- **Subfolders with substantial content** — Their own `INDEX.md` where useful
 
 Only missing or outdated content is created or updated; accurate content is left as is.
 
