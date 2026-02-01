@@ -1,5 +1,5 @@
 {
-  "installCommand": "cd hooks/docs && npm i --no-save --silent && npm run build || true",
+  "installCommand": "npm i --no-save --silent && npm run build || true",
   "files": {
     "hooks": [
       "hooks/docs"
