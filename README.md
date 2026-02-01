@@ -2,6 +2,11 @@
 
 Keeps project documentation consistent by running a Cursor Agent doc pass after edits. Records edited files per conversation and, when the agent stops, invokes the Cursor Agent CLI in the background to update `docs/INDEX.md` and module-level `INDEX.md` files if there were edits.
 
+<p align="center">
+  <img src=".github/screenshot.png" alt="Demo" />
+</p>
+
+
 ## Features
 
 - Records which files were edited in the current conversation (`afterFileEdit`)
